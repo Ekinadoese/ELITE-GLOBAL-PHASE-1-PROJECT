@@ -65,7 +65,7 @@ By following these steps, the dataset was cleaned and optimized for accurate ana
 
 ## DATA
 
-The dataset appears well-structured and contains 179 rows and 20 columns. It includes data related to health metrics, economy, and demographic indicators. Here’s a summary:
+The dataset appears well-structured and contains 179 rows and 20 columns [Click Here to download](https://www.kaggle.com/datasets/shreyasg23/life-expectancy-averaged-dataset?resource=download). It includes data related to health metrics, economy, and demographic indicators. Here’s a summary:
 
 ### Key Columns
 

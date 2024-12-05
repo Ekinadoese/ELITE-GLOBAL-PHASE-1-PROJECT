@@ -15,7 +15,7 @@ This project analyzes global life expectancy data to uncover the socioeconomic a
 - [CONCLUSION](CONCLUSION)
 - [RECOMMENDATION](RECOMMENDATION)
 - [VISUALIZATION](VISUALIZATION)
-
+- [PRESENTATION SLIDE](PRESENTATION-SLIDE)
 ## PROJECT TITLE 
 
 ## LIFE EXPECTANCY ANALYSIS USING SOCIOECONOMIC AND HEALTH INDICATORS
@@ -667,6 +667,8 @@ By aligning global resources with these actionable insights, Health management p
 
 
 ![image](https://github.com/user-attachments/assets/edb87790-9aca-40c5-bf0a-e7b919be1154)
+
+## PRESENTATION SLIDE
 
 
 

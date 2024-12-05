@@ -135,7 +135,251 @@ Results:
 R-squared value: ~75%, indicating a strong model fit.
 Significant predictors: Schooling, adult mortality, and immunization.
 
+LINEAR REGRESSION
+
+IMPACT OF MORTALITY RATE ON LIFE EXPECTANCY
+
+![image](https://github.com/user-attachments/assets/f0b6984f-4e3a-43c8-b940-e570af6d2840)
+
+![image](https://github.com/user-attachments/assets/a53ff774-cdca-4655-be87-ba70ad76e6bc)
+
+LIFE EXPECTANCY = 82.81321 - 0.159696 INFANT MORTALITY - 0.0474026 ADULT MORTALITY
+
+Reporting results 
+
+Results of the multiple linear regression indicated that there was a very strong collective significant effect between the INFANT MORTALITY, UNDER 5 MORTALITY, ADULT MORTALITY, and LIFE EXPECTANCY, (F(2, 176) = 3391.31, p < .001, R2 = 0.97, R2adj = 0.97).
+
+The individual predictors were examined further and indicated that INFANT MORTALITY (t = -23.126, p < .001) and UNDER 5 MORTALITY (t = -28.69, p < .001) were significant predictors in the model, and ADULT MORTALITY was non significant predictor in the model.
+
+![image](https://github.com/user-attachments/assets/1663ffec-b21f-47b8-a702-54794abf817b)
+
+![image](https://github.com/user-attachments/assets/ae9cc3c8-3a29-4fd3-b638-beae19fd16a8)
+
+Multiple linear regression
+
+The backward stepwise method is used to produce an initial screening of the predictors. 
+
+1. Y and X relationship
+
+R square (R2) equals 0.974708. It means that the predictors (Xi) explain 97.5% of the variance of Y.
+
+Adjusted R square equals 0.97442.
+
+The coefficient of multiple correlation (R) equals 0.987273. It means that there is a very strong correlation between the predicted data (ŷ) and the observed data (y)
+
+2. Goodness of fit
+Overall regression: right-tailed, F(2,176) = 3391.310675, p-value = 0. Since p-value < α (0.05), we reject the H0.
+
+The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, provides a better fit than the model without the independent variables resulting in, Y = b0 + ε.
+
+The following independent variable is not significant as predictor for Y: UNDER 5 MORTALITY.
+Therefore it was excluded from the model.
+
+The Y-intercept (b): two-tailed, T = 369.836524, p-value = 0. Hence b is significantly different from zero.
+
+Validation
+Residual normality
+linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.5306. It is assumed that the data is normally distributed.
+
+Homoscedasticity - homogeneity of variance
+The White test p-value equals 0.0160214 (F=4.232463). It is assumed that the variance is not homogeneous.
+
+Multicollinearity - intercorrelations among the predictors (Xi)
+There is a low multicollinearity concern as some of the VIF values are bigger than 2.5.
+
+Priori power - of the entire model (3 predictors)
+
+The power to test the entire model is strong: 0.9979
+
+![image](https://github.com/user-attachments/assets/be83cf13-311a-4b7e-b4d6-a5972fa6bd3c)
+
+![image](https://github.com/user-attachments/assets/c4e42365-f59d-4cc3-9970-f29175fb6891)
+
+![image](https://github.com/user-attachments/assets/3be60b83-5543-4489-bccf-5acc3c00472f)
+
+IMPACT OF IMMUNIZATION ON INFANT MORTALITY
+
+INFANT MORTALITY = 234.008261 + 0.752244 HEPATITIS - 0.484221 MEASLES - 2.52578 DIPTHERIA
+
+Reporting results 
+
+Results of the multiple linear regression indicated that there was a strong collective significant effect between the HEPATITIS, MEASLES, POLIO, DIPTHERIA, and INFANT MORTALITY, (F(3, 175) = 89.3, p < .001, R2 = 0.6, R2adj = 0.6).
+
+The individual predictors were examined further and indicated that HEPATITIS (t = 2.842, p = .005) and MEASLES (t = -3.53, p < .001) and POLIO (t = -9.079, p < .001) were significant predictors in the model
+
+![image](https://github.com/user-attachments/assets/36eb2327-23b5-4519-8f36-866dd219877f)
+
+![image](https://github.com/user-attachments/assets/64515bc3-5507-44cd-8176-3b3be4ea3b6c)
+
+Multiple linear regression
+The backward stepwise method is used to produce an initial screening of the predictors.
+
+1. Y and X relationship
+
+R square (R2) equals 0.604883. It means that the predictors (Xi) explain 60.5% of the variance of Y.
+
+Adjusted R square equals 0.59811.
+
+The coefficient of multiple correlation (R) equals 0.777743. It means that there is a strong correlation between the predicted data (ŷ) and the observed data (y).
+
+2. Goodness of fit
+
+Overall regression: right-tailed, F(3,175) = 89.302414, p-value = -2.22045e-16. Since p-value < α (0.05), we reject the H0.
+
+The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, provides a better fit than the model without the independent variables resulting in, Y = b0 + ε.
+
+The following independent variable is not significant as predictor for Y: POLIO.
+Therefore it was excluded from the model.
+
+The Y-intercept (b): two-tailed, T = 17.893084, p-value = 3.33067e-16. Hence b is significantly different from zero.
+
+Validation
+
+Residual normality
+
+linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.00004998. It is assumed that the data is not normally distributed.
+
+Homoscedasticity - homogeneity of variance
+
+The White test p-value equals 1.79484e-10 (F=25.561831). It is assumed that the variance is not homogeneous.
+
+Multicollinearity - intercorrelations among the predictors (Xi)
+
+
+Priori power - of the entire model (4 predictors)
+
+The power to test the entire model is strong: 0.9957
+
+![image](https://github.com/user-attachments/assets/cef90397-d01c-4a00-bb3c-189cd1e95e01)
+
+![image](https://github.com/user-attachments/assets/40e99fc4-ec37-419b-abfd-34b108c406fa)
+
+![image](https://github.com/user-attachments/assets/4dc64a56-e1a1-4366-8208-5b9d474aa622)
+
+
+IMPACT OF IMMUNIZATION ON UNDER 5 MORTALITY
+
+![image](https://github.com/user-attachments/assets/03002f4d-e897-4c35-a80d-8e1d6ac01f24)
+![image](https://github.com/user-attachments/assets/58475115-d3ac-4c76-8832-fc2db34da617)
+
+Ln(UNDER 5 MORTALITY) = 20.447249 + 1.807709 Ln(HEPATITIS) - 1.108484 Ln(MEASLES) - 2.227308 Ln(POLIO) - 2.375264 Ln(DIPTHERIA)
+
+UNDER 5 MORTALITY = 758799846.6⋅HEPATITIS1.807709⋅MEASLES-1.108484⋅POLIO-2.227308⋅DIPTHERIA-2.375264
+
+Reporting results
+
+Results of the multiple linear regression indicated that there was a strong collective significant effect between the HEPATITIS, MEASLES, POLIO, DIPTHERIA, and UNDER 5 MORTALITY, (F(4, 174) = 46.71, p < .001, R2 = 0.52, R2adj = 0.51).
+
+The individual predictors were examined further and indicated that HEPATITIS (t = 3.369, p < .001) and MEASLES (t = -4.69, p < .001) and POLIO (t = -1.993, p = .048) and DIPTHERIA (t = -2.057, p = .041) were significant predictors in the model.
+
+![image](https://github.com/user-attachments/assets/ef62281f-3901-4f30-884d-7e05d22afacc)
+
+![image](https://github.com/user-attachments/assets/b1aa2339-aba2-48ec-a03e-93a3d3390bf7)
+
+Multiple linear regression
+The backward stepwise method is used to produce an initial screening of the predictors. 
+
+1. Y and X relationship
+R square (R2) equals 0.517791. It means that the predictors (Xi) explain 51.8% of the variance of Y.
+Adjusted R square equals 0.506706.
+The coefficient of multiple correlation (R) equals 0.719577. It means that there is a strong correlation between the predicted data (ŷ) and the observed data (y).
+
+2. Goodness of fit
+Overall regression: right-tailed, F(4,174) = 46.709926, p-value = 0. Since p-value < α (0.05), we reject the H0.
+The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, provides a better fit than the model without the independent variables resulting in, Y = b0 + ε.
+
+All the independent variables (Xi) are significant.
+
+The Y-intercept (b): two-tailed, T = 13.68948, p-value = 0. Hence b is significantly different from zero.
+
+Validation
+
+Residual normality
+linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.08468. It is assumed that the data is normally distributed.
+
+
+Homoscedasticity - homogeneity of variance
+The White test p-value equals 2.20049e-10 (F=25.299179). It is assumed that the variance is not homogeneous.
+
+Multicollinearity - intercorrelations among the predictors (Xi)
+There is a high multicollinearity concern as some of the VIF values are bigger than 10
+
+Priori power - of the entire model (4 predictors)
+
+The power to test the entire model is strong: 0.9927
+
+![image](https://github.com/user-attachments/assets/94cdf720-cdef-47fa-94a8-b1bcff6c5757)
+
+![image](https://github.com/user-attachments/assets/a2dd8e75-ce96-4797-bfc5-1bc33dbf9099)
+
+![image](https://github.com/user-attachments/assets/de10ce84-43c9-44b3-b6e0-2f08be97a924)
+
+![image](https://github.com/user-attachments/assets/982df6e7-9ce6-45b5-8038-dbbbb365a5e5)
+
+BEHAVIOURAL IMPACT ON ADULT MORTALITY
+
+Ln(ADULT MORTALITY ) = 5.066562 - 0.0357906 Ln(HIV)
+
+ADULT MORTALITY = 158.628066⋅HIV-0.0357906
+
+Reporting results
+
+Results of the multiple linear regression indicated that there was a very weak collective non significant effect between the ALCOHOL, HIV, and ADULT MORTALITY , (F(1, 177) = 1.22, p = .271, R2 = 0.01, R2adj = 0).
+
+![image](https://github.com/user-attachments/assets/13ef8dd5-f2d0-4c00-a451-72458a52793a)
+
+![image](https://github.com/user-attachments/assets/7469d099-c613-42a2-8f03-5c33cccdcbdb)
+
+Multiple linear regression
+The backward stepwise method is used to produce an initial screening of the predictors. 
+
+1. Y and X relationship
+R square (R2) equals 0.00683623. It means that the predictors (Xi) explain 0.7% of the variance of Y.
+Adjusted R square equals 0.00122513.
+The coefficient of multiple correlation (R) equals 0.0826815. It means that there is a very weak correlation between the predicted data (ŷ) and the observed data (y).
+
+2. Goodness of fit
+Overall regression: right-tailed, F(1,177) = 1.218342, p-value = 0.271185. Since p-value ≥ α (0.05), we accept the H0.
+The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, doesn't provide a better fit than the model without the independent variables resulting in, Y = b0 + ε.
+
+The following independent variable is not significant as predictor for Y: Ln(ALCOHOL).
+Therefore it was excluded from the model.
+
+The remaining variable: Ln(HIV) is not significant
+
+The Y-intercept (b): two-tailed, T = 95.579246, p-value = 0. Hence b is significantly different from zero.
+
+Validation
+
+Residual normality
+
+linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.05037. It is assumed that the data is normally distributed.
+
+
+Homoscedasticity - homogeneity of variance
+The White test p-value equals 0 (F=3980.296512). It is assumed that the variance is not homogeneous.
+
+Multicollinearity - intercorrelations among the predictors (Xi)
+There is no multicollinearity concern as all the VIF values are smaller than 2.5 .
+
+
+Priori power - of the entire model (2 predictors)
+
+The power to test the entire model is strong: 0.9994.
+
+![image](https://github.com/user-attachments/assets/247d1b2a-a763-46e9-a7f5-acf6192e6d67)
+
+![image](https://github.com/user-attachments/assets/71c6bea8-3345-42ea-8e44-f894510bf156)
+
+![image](https://github.com/user-attachments/assets/935317d3-c8c4-4472-805f-1546722da9f2)
+
+
+
+
+
 ### INSIGHTS
+
+
 
 
 

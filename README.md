@@ -51,7 +51,7 @@ The data for this project was gotten from kaggle. [Click Here](https://www.kaggl
 
 The dataset appears well-structured and contains 179 rows and 20 columns [Click Here to download](https://www.kaggle.com/datasets/shreyasg23/life-expectancy-averaged-dataset?resource=download). It includes data related to health metrics, economy, and demographic indicators. 
 
-Columns:
+**COLUMNS**
 - **Country:** Name of the country.
 - **Region:** Geographic region.
 - **Year:** Year of observation.
@@ -119,25 +119,128 @@ By following these steps, the dataset was cleaned and optimized for accurate ana
 
 ## ANALYSIS AND INSIGHTS
 
-### ANALYSIS
+## DESCRIPTIVE STATISTICS
 
-Key Analysis:
+![image](https://github.com/user-attachments/assets/38405925-ce24-421a-849b-b5c44492d810)
 
-- Life Expectancy Distribution: Global variations by region and economic status.
-- Correlation Matrix: Highlighting relationships between variables like schooling, immunization, GDP, and life expectancy.
-- Trend Analysis: Life expectancy over time across regions.
-- Missing Data Patterns: Regions or variables most affected by data gaps.
+![image](https://github.com/user-attachments/assets/da8cb9ff-be8a-45d2-ac50-5cc6b8e3ac2e)
 
-Statistical Analysis
+![image](https://github.com/user-attachments/assets/8a6cd958-df00-42ce-ac77-a4fc722f1431)
 
-p-value interpretation (< 0.05 indicates significance).
-Results:
-R-squared value: ~75%, indicating a strong model fit.
-Significant predictors: Schooling, adult mortality, and immunization.
+### Key Findings
+1. Education and immunization significantly improve life expectancy in developing nations.
+2. High adult mortality and HIV prevalence strongly correlate with lower life expectancy.
+3. Economic growth (GDP per capita) is a pivotal driver of healthcare access and outcomes.
+4. Improved nutritional status is critical for reducing under-five mortality.
+5. Life Expectancy Disparities: Clear divide between developed (>75 years) and developing countries (~60 years). Major drivers include education, immunization, and GDP per capita.
+6. Health Challenges in Developing Regions: Higher infant mortality, under-five deaths, and malnutrition hinder sustainable health outcomes.
+7. Immunization Gaps: Hepatitis B and Polio remain critical focus areas, particularly in low-income regions.
+8. HIV Epidemic: Adult mortality is heavily impacted by HIV, highlighting a need for sustained healthcare interventions.
 
-REGRESSION
+### Predictive Trends
+1. **Rising Life Expectancy:** Continued investment in schooling and immunization can add up to 5-7 years to life expectancy in low-GDP regions by 2030.
+2. **Target regions:** Sub-Saharan Africa and South Asia.
+3. **Impact of Economic Growth:** Projected GDP increases in developing countries may enable higher healthcare spending, boosting immunization rates and reducing mortality.
+4. **Immunization Focus:** Improving Hepatitis B coverage from ~65% to 90% in low-performing regions can reduce infant mortality by up to 15%.
+5. **Nutrition Intervention:** Addressing thinness in children through school feeding programs and nutritional education may enhance youth survival and cognitive outcomes.
+
+## RECOMMENDATION
+1. **Strengthen Educational Programs:**
+   - Expand access to schooling to build long-term health equity and increase life expectancy.
+   - Partner with NGOs to enhance adult literacy and healthcare awareness.
+2. **Expand Immunization Coverage:**
+   - Improve immunization programs in low-GDP countries.
+   - Implement targeted campaigns for Hepatitis B and Diphtheria.
+   - Integrate vaccination programs with school attendance incentives.
+3. **Invest in Healthcare Infrastructure:**
+   - Address healthcare disparities through targeted funding.
+   - Allocate resources for rural health centers in regions with high mortality rates.
+   - Deploy mobile clinics to address healthcare deserts.
+4. **Focus on Nutrition:**
+   - Launch region-specific programs addressing child malnutrition.
+   - Partner with local governments to enhance food security.
+5. **Monitor and Reduce HIV Impact:**
+   - Increase funding for antiretroviral therapy.
+   - Focus on education to reduce transmission and stigma.
+
+## REGRESSION
+
+IMPACT OF HEALTH INDICATORS ON LIFE EXPECTANCY
+
+![image](https://github.com/user-attachments/assets/785c4d1b-0d75-4606-9cbf-68e4426388a9)
+
+![image](https://github.com/user-attachments/assets/5cba33e6-dbfa-47db-a2aa-e768d780fe48)
+
+![image](https://github.com/user-attachments/assets/36f12927-5b6d-44e9-8fbb-42dccc747730)
+
+![image](https://github.com/user-attachments/assets/d157d178-e133-4d27-8fe3-78c74b613d9b)
+
+LIFE EXPECTANCY = 36.733909 - 0.125226 HEPATITIS + 0.0564321 MEASLES + 0.436975 POLIO - 1.783662 HIV + 0.433237 ALCOHOL
+
+Reporting results 
+
+Results of the multiple linear regression indicated that there was a very strong collective significant effect between the HEPATITIS, MEASLES, POLIO, DIPTHERIA, HIV, ALCOHOL, and LIFE EXPECTANCY, (F(5, 173) = 95.16, p < .001, R2 = 0.73, R2adj = 0.73).
+
+The individual predictors were examined further and indicated that HEPATITIS (t = -2.764, p = .006) and MEASLES (t = 2.145, p = .033) and POLIO (t = 8.592, p < .001) and DIPTHERIA (t = -11.184, p < .001) and HIV (t = 4.294, p < .001) were significant predictors in the model.
+
+![image](https://github.com/user-attachments/assets/80866812-2ca0-4e42-801b-d87e2e28693b)
+
+![image](https://github.com/user-attachments/assets/e5639a38-13d6-452a-9ce1-c7767b93a40a)
+
+![image](https://github.com/user-attachments/assets/16fbec74-9aec-4b15-84e9-d41783cf1ef6)
+
+Multiple linear regression
+
+The backward stepwise method is used to produce an initial screening of the predictors.
+
+
+1. Y and X relationship
+
+R square (R2) equals 0.733353. It means that the predictors (Xi) explain 73.3% of the variance of Y.
+
+Adjusted R square equals 0.725647.
+
+The coefficient of multiple correlation (R) equals 0.85636. It means that there is a very strong correlation between the predicted data (ŷ) and the observed data (y).
+
+2. Goodness of fit
+
+Overall regression: right-tailed, F(5,173) = 95.159622, p-value = 0. Since p-value < α (0.05), we reject the H0.
+The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, provides a better fit than the model without the independent variables resulting in, Y = b0 + ε.
+
+The following independent variable is not significant as predictor for Y: DIPTHERIA.
+Therefore it was excluded from the model.
+
+The Y-intercept (b): two-tailed, T = 14.680723, p-value = -2.22045e-16. Hence b is significantly different from zero.
+
+Validation
+
+Residual normality
+
+linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.1006. It is assumed that the data is normally distributed.
+
+Homoscedasticity - homogeneity of variance
+
+The White test p-value equals 0.000101859 (F=9.689145). It is assumed that the variance is not homogeneous.
+
+Multicollinearity - intercorrelations among the predictors (Xi)
+
+There is a low multicollinearity concern as some of the VIF values are bigger than 2.5.
+
+Priori power - of the entire model (6 predictors)
+
+The priori power should be calculated before running the regression.
+The power to test the entire model is strong: 0.9891
+
+![image](https://github.com/user-attachments/assets/ae735a28-ba7e-4d98-af6d-681e8406a8eb)
+
+![image](https://github.com/user-attachments/assets/54cf36f9-548c-4a1b-9461-43e0b016c1d5)
+
+![image](https://github.com/user-attachments/assets/009c89c1-bf15-4fbd-882c-608f126b6fa5)
+
 
 IMPACT OF MORTALITY RATE ON LIFE EXPECTANCY
+
+![image](https://github.com/user-attachments/assets/9debfdf2-6544-4896-b80f-01f17889e0cb)
 
 ![image](https://github.com/user-attachments/assets/f0b6984f-4e3a-43c8-b940-e570af6d2840)
 
@@ -168,6 +271,7 @@ Adjusted R square equals 0.97442.
 The coefficient of multiple correlation (R) equals 0.987273. It means that there is a very strong correlation between the predicted data (ŷ) and the observed data (y)
 
 2. Goodness of fit
+
 Overall regression: right-tailed, F(2,176) = 3391.310675, p-value = 0. Since p-value < α (0.05), we reject the H0.
 
 The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, provides a better fit than the model without the independent variables resulting in, Y = b0 + ε.
@@ -178,13 +282,17 @@ Therefore it was excluded from the model.
 The Y-intercept (b): two-tailed, T = 369.836524, p-value = 0. Hence b is significantly different from zero.
 
 Validation
+
 Residual normality
+
 linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.5306. It is assumed that the data is normally distributed.
 
 Homoscedasticity - homogeneity of variance
+
 The White test p-value equals 0.0160214 (F=4.232463). It is assumed that the variance is not homogeneous.
 
 Multicollinearity - intercorrelations among the predictors (Xi)
+
 There is a low multicollinearity concern as some of the VIF values are bigger than 2.5.
 
 Priori power - of the entire model (3 predictors)
@@ -207,11 +315,14 @@ Results of the multiple linear regression indicated that there was a strong coll
 
 The individual predictors were examined further and indicated that HEPATITIS (t = 2.842, p = .005) and MEASLES (t = -3.53, p < .001) and POLIO (t = -9.079, p < .001) were significant predictors in the model
 
+![image](https://github.com/user-attachments/assets/abebebe6-3c3b-4212-a2db-cbc367b0ebe7)
+
 ![image](https://github.com/user-attachments/assets/36eb2327-23b5-4519-8f36-866dd219877f)
 
 ![image](https://github.com/user-attachments/assets/64515bc3-5507-44cd-8176-3b3be4ea3b6c)
 
 Multiple linear regression
+
 The backward stepwise method is used to produce an initial screening of the predictors.
 
 1. Y and X relationship
@@ -245,7 +356,6 @@ The White test p-value equals 1.79484e-10 (F=25.561831). It is assumed that the 
 
 Multicollinearity - intercorrelations among the predictors (Xi)
 
-
 Priori power - of the entire model (4 predictors)
 
 The power to test the entire model is strong: 0.9957
@@ -259,7 +369,10 @@ The power to test the entire model is strong: 0.9957
 
 IMPACT OF HEALTH INDICATORS ON UNDER 5 MORTALITY
 
+![image](https://github.com/user-attachments/assets/e3fb7ca9-81f0-4230-a566-7f89997b0035)
+
 ![image](https://github.com/user-attachments/assets/03002f4d-e897-4c35-a80d-8e1d6ac01f24)
+
 ![image](https://github.com/user-attachments/assets/58475115-d3ac-4c76-8832-fc2db34da617)
 
 Ln(UNDER 5 MORTALITY) = 20.447249 + 1.807709 Ln(HEPATITIS) - 1.108484 Ln(MEASLES) - 2.227308 Ln(POLIO) - 2.375264 Ln(DIPTHERIA)
@@ -277,15 +390,21 @@ The individual predictors were examined further and indicated that HEPATITIS (t 
 ![image](https://github.com/user-attachments/assets/b1aa2339-aba2-48ec-a03e-93a3d3390bf7)
 
 Multiple linear regression
+
 The backward stepwise method is used to produce an initial screening of the predictors. 
 
 1. Y and X relationship
+
 R square (R2) equals 0.517791. It means that the predictors (Xi) explain 51.8% of the variance of Y.
+
 Adjusted R square equals 0.506706.
+
 The coefficient of multiple correlation (R) equals 0.719577. It means that there is a strong correlation between the predicted data (ŷ) and the observed data (y).
 
 2. Goodness of fit
+
 Overall regression: right-tailed, F(4,174) = 46.709926, p-value = 0. Since p-value < α (0.05), we reject the H0.
+
 The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, provides a better fit than the model without the independent variables resulting in, Y = b0 + ε.
 
 All the independent variables (Xi) are significant.
@@ -295,13 +414,16 @@ The Y-intercept (b): two-tailed, T = 13.68948, p-value = 0. Hence b is significa
 Validation
 
 Residual normality
+
 linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.08468. It is assumed that the data is normally distributed.
 
 
 Homoscedasticity - homogeneity of variance
+
 The White test p-value equals 2.20049e-10 (F=25.299179). It is assumed that the variance is not homogeneous.
 
 Multicollinearity - intercorrelations among the predictors (Xi)
+
 There is a high multicollinearity concern as some of the VIF values are bigger than 10
 
 Priori power - of the entire model (4 predictors)
@@ -326,20 +448,28 @@ Reporting results
 
 Results of the multiple linear regression indicated that there was a very weak collective non significant effect between the ALCOHOL, HIV, and ADULT MORTALITY , (F(1, 177) = 1.22, p = .271, R2 = 0.01, R2adj = 0).
 
+![image](https://github.com/user-attachments/assets/359cac56-8b78-4de2-9ddb-390ff6233d38)
+
 ![image](https://github.com/user-attachments/assets/13ef8dd5-f2d0-4c00-a451-72458a52793a)
 
 ![image](https://github.com/user-attachments/assets/7469d099-c613-42a2-8f03-5c33cccdcbdb)
 
 Multiple linear regression
+
 The backward stepwise method is used to produce an initial screening of the predictors. 
 
 1. Y and X relationship
+
 R square (R2) equals 0.00683623. It means that the predictors (Xi) explain 0.7% of the variance of Y.
+
 Adjusted R square equals 0.00122513.
+
 The coefficient of multiple correlation (R) equals 0.0826815. It means that there is a very weak correlation between the predicted data (ŷ) and the observed data (y).
 
 2. Goodness of fit
+
 Overall regression: right-tailed, F(1,177) = 1.218342, p-value = 0.271185. Since p-value ≥ α (0.05), we accept the H0.
+
 The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, doesn't provide a better fit than the model without the independent variables resulting in, Y = b0 + ε.
 
 The following independent variable is not significant as predictor for Y: Ln(ALCOHOL).
@@ -357,9 +487,11 @@ linear regression assumes normality for residual errors. Shapiro Wilk p-value eq
 
 
 Homoscedasticity - homogeneity of variance
+
 The White test p-value equals 0 (F=3980.296512). It is assumed that the variance is not homogeneous.
 
 Multicollinearity - intercorrelations among the predictors (Xi)
+
 There is no multicollinearity concern as all the VIF values are smaller than 2.5 .
 
 
@@ -373,59 +505,167 @@ The power to test the entire model is strong: 0.9994.
 
 ![image](https://github.com/user-attachments/assets/935317d3-c8c4-4472-805f-1546722da9f2)
 
+IMPACT OF SOCIAL INDICATORS ON LIFE EXPECTANCY
+
+![image](https://github.com/user-attachments/assets/d6c8fc99-14bd-47d8-ac90-2720feec9679)
+
+LIFE EXPECTANCY = 54.172091 + 0.000140947 GDP PER CAPITAL + 1.709834 SCHOOLING
+
+Reporting results 
+
+Results of the multiple linear regression indicated that there was a strong collective significant effect between the GDP PER CAPITAL, POPULATION, SCHOOLING, and LIFE EXPECTANCY, (F(2, 176) = 122.04, p < .001, R2 = 0.58, R2adj = 0.58).
+
+The individual predictors were examined further and indicated that GDP PER CAPITAL (t = 4.336, p < .001) and POPULATION (t = 9.767, p < .001) were significant predictors in the model.
+
+![image](https://github.com/user-attachments/assets/63fbf098-8c31-4818-a083-b011fb766bc0)
+
+![image](https://github.com/user-attachments/assets/f8cb9e73-fea8-4fd2-98e9-1abe2a3e929d)
+
+Multiple linear regression
+The backward stepwise method is used to produce an initial screening of the predictors. 
+
+1. Y and X relationship
+
+R square (R2) equals 0.581039. It means that the predictors (Xi) explain 58.1% of the variance of Y.
+
+Adjusted R square equals 0.576278.
+
+The coefficient of multiple correlation (R) equals 0.762259. It means that there is a strong correlation between the predicted data (ŷ) and the observed data (y).
+
+2. Goodness of fit
+
+Overall regression: right-tailed, F(2,176) = 122.043537, p-value = 0. Since p-value < α (0.05), we reject the H0.
+
+The linear regression model, Y = b0+ b1X1 +...+bpXp + ε, provides a better fit than the model without the independent variables resulting in, Y = b0 + ε.
+
+The following independent variable is not significant as predictor for Y: POPULATION.
+Therefore it was excluded from the model.
+
+The Y-intercept (b): two-tailed, T = 43.509514, p-value = -2.22045e-16. Hence b is significantly different from zero.
+
+Validation
+
+Residual normality
+
+linear regression assumes normality for residual errors. Shapiro Wilk p-value equals 0.001187. It is assumed that the data is not normally distributed.
+
+Homoscedasticity - homogeneity of variance
+
+The White test p-value equals 0 (F=63.476097). It is assumed that the variance is not homogeneous.
+
+Multicollinearity - intercorrelations among the predictors (Xi)
+There is no multicollinearity concern as all the VIF values are smaller than 2.5 .
+
+Priori power - of the entire model (3 predictors)
+
+The power to test the entire model is strong: 0.9979
+
+![image](https://github.com/user-attachments/assets/741d7884-ebe2-4b2d-b31e-eb75df1fdc6a)
+
+![image](https://github.com/user-attachments/assets/86fb4b89-c85e-4a4b-95b8-a95889bc9877)
 
 
+## Comprehensive Summary of Regression Models
 
+LIFE EXPECTANCY Regression Models:
 
-### INSIGHTS
+Key Predictors:
 
+Negative Impact: HIV significantly decreases life expectancy (t = -1.783662, p < 0.001).
 
+Positive Impact: Polio vaccinations and alcohol consumption contribute positively to life expectancy.
 
+GDP per capita and schooling were strong predictors of life expectancy (R² = 0.58), with schooling showing a notable influence.
+Insights:
 
+Economic and educational factors significantly enhance life expectancy. Public health measures, particularly targeting HIV and improving vaccination rates, would have the most immediate life-extending effects.
 
-### Key Findings
-1. Education and immunization significantly improve life expectancy in developing nations.
-2. High adult mortality and HIV prevalence strongly correlate with lower life expectancy.
-3. Economic growth (GDP per capita) is a pivotal driver of healthcare access and outcomes.
-4. Improved nutritional status is critical for reducing under-five mortality.
-5. Life Expectancy Disparities: Clear divide between developed (>75 years) and developing countries (~60 years). Major drivers include education, immunization, and GDP per capita.
-6. Health Challenges in Developing Regions: Higher infant mortality, under-five deaths, and malnutrition hinder sustainable health outcomes.
-7. Immunization Gaps: Hepatitis B and Polio remain critical focus areas, particularly in low-income regions.
-8. HIV Epidemic: Adult mortality is heavily impacted by HIV, highlighting a need for sustained healthcare interventions.
+Alcohol consumption's positive association could indicate its proxy for healthcare access or a social determinant rather than a direct health benefit.
 
-### Predictive Trends
-1. **Rising Life Expectancy:** Continued investment in schooling and immunization can add up to 5-7 years to life expectancy in low-GDP regions by 2030.
-2. **Target regions:** Sub-Saharan Africa and South Asia.
-3. **Impact of Economic Growth:** Projected GDP increases in developing countries may enable higher healthcare spending, boosting immunization rates and reducing mortality.
-4. **Immunization Focus:** Improving Hepatitis B coverage from ~65% to 90% in low-performing regions can reduce infant mortality by up to 15%.
-5. **Nutrition Intervention:** Addressing thinness in children through school feeding programs and nutritional education may enhance youth survival and cognitive outcomes.
+INFANT MORTALITY:
 
-## RECOMMENDATION
+Key Predictors:
 
-1. **Strengthen Educational Programs:**
-   - Expand access to schooling to build long-term health equity and increase life expectancy.
-   - Partner with NGOs to enhance adult literacy and healthcare awareness.
-2. **Expand Immunization Coverage:**
-   - Improve immunization programs in low-GDP countries.
-   - Implement targeted campaigns for Hepatitis B and Diphtheria.
-   - Integrate vaccination programs with school attendance incentives.
-3. **Invest in Healthcare Infrastructure:**
-   - Address healthcare disparities through targeted funding.
-   - Allocate resources for rural health centers in regions with high mortality rates.
-   - Deploy mobile clinics to address healthcare deserts.
-4. **Focus on Nutrition:**
-   - Launch region-specific programs addressing child malnutrition.
-   - Partner with local governments to enhance food security.
-5. **Monitor and Reduce HIV Impact:**
-   - Increase funding for antiretroviral therapy.
-   - Focus on education to reduce transmission and stigma.
+Hepatitis increases infant mortality, while measles and diphtheria show a protective relationship when controlled for other factors (R² = 0.52).
 
+Insights:
+
+Vaccination campaigns targeting diseases like measles, polio, and diphtheria are critical for reducing infant mortality. Hepatitis prevalence requires more aggressive mitigation strategies to minimize its impact on vulnerable populations.
+
+UNDER-5 MORTALITY:
+
+Key Predictors:
+
+Diseases like hepatitis (positive association) and measles, polio, and diphtheria (negative associations) collectively explain 51.8% of the variance in under-5 mortality.
+
+Insights:
+Like infant mortality, under-5 mortality is closely tied to vaccination rates and disease management. Effective hepatitis vaccination and broader coverage for childhood immunization could significantly improve outcomes.
+
+ADULT MORTALITY:
+
+Key Predictors:
+
+HIV was the only predictor tested and showed a weak correlation with adult mortality (R² = 0.01), indicating that other factors might be more important predictors.
+
+Insights:
+
+HIV alone does not explain adult mortality variations significantly in this dataset. This suggests the need for more comprehensive datasets encompassing socio-economic, environmental, and healthcare factors.
+
+Key Insights
+
+Vaccination and Public Health:
+
+Polio, measles, and diphtheria vaccines have the most significant positive effect on life expectancy and reductions in child mortality. Expanding immunization coverage could lead to substantial health improvements.
+
+Hepatitis emerges as a consistent risk factor across multiple models, underscoring the need for better prevention and treatment strategies.
+
+Economic and Educational Drivers:
+
+Higher GDP per capita and years of schooling are strongly correlated with increased life expectancy. Economic growth policies and universal education initiatives are vital long-term investments for global health improvement.
+
+Disease-Specific Recommendations:
+
+While some diseases like HIV strongly correlate with life expectancy, the analysis suggests a broader focus on multi-disease interventions, particularly for early childhood illnesses.
+
+Predictive Analysis
+
+Short-term Predictions:
+
+Countries increasing their GDP per capita and schooling years could experience measurable life expectancy improvements over the next decade, provided that healthcare and immunization efforts are sustained.
+
+Reducing hepatitis prevalence alone could significantly decrease infant and under-5 mortality rates.
+
+Long-term Trends:
+
+Vaccination coverage expansion will lead to a gradual decline in both infant and under-5 mortality. The cumulative effect of education and healthcare infrastructure investment will reflect in rising life expectancy across regions.
+
+Recommendations
+
+Enhance Immunization Campaigns:
+
+Target under-immunized areas for polio, measles, and diphtheria vaccines.
+
+Introduce more comprehensive hepatitis control programs, including vaccination and treatment subsidies.
+
+Invest in Education and Economic Growth:
+
+Policies that improve schooling access will yield long-term health dividends.
+
+Increase investments in healthcare infrastructure to translate economic growth into public health benefits.
+
+Expand Data Scope:
+
+Incorporate socio-economic and environmental variables into future models to better understand adult mortality.
 
 ## CONCLUSION
 
 By aligning global resources with these actionable insights, Health management partners can improve global health equity, reduce preventable deaths, and promote sustainable development goals. This dataset has revealed areas where strategic interventions will have the most impact.
 
 ## VISUALIZATION
+
+DATA TRANSFORMATION
+
+![image](https://github.com/user-attachments/assets/874805cf-3824-4354-97f1-8d843f5e752f)
 
 Key Plots:
 Line graphs: Trends in life expectancy over time.

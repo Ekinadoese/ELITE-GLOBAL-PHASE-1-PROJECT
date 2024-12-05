@@ -197,7 +197,7 @@ The power to test the entire model is strong: 0.9979
 
 ![image](https://github.com/user-attachments/assets/3be60b83-5543-4489-bccf-5acc3c00472f)
 
-IMPACT OF IMMUNIZATION ON INFANT MORTALITY
+IMPACT OF HEALTH INDICATORS ON INFANT MORTALITY
 
 INFANT MORTALITY = 234.008261 + 0.752244 HEPATITIS - 0.484221 MEASLES - 2.52578 DIPTHERIA
 
@@ -257,7 +257,7 @@ The power to test the entire model is strong: 0.9957
 ![image](https://github.com/user-attachments/assets/4dc64a56-e1a1-4366-8208-5b9d474aa622)
 
 
-IMPACT OF IMMUNIZATION ON UNDER 5 MORTALITY
+IMPACT OF HEALTH INDICATORS ON UNDER 5 MORTALITY
 
 ![image](https://github.com/user-attachments/assets/03002f4d-e897-4c35-a80d-8e1d6ac01f24)
 ![image](https://github.com/user-attachments/assets/58475115-d3ac-4c76-8832-fc2db34da617)
@@ -316,7 +316,7 @@ The power to test the entire model is strong: 0.9927
 
 ![image](https://github.com/user-attachments/assets/982df6e7-9ce6-45b5-8038-dbbbb365a5e5)
 
-BEHAVIOURAL IMPACT ON ADULT MORTALITY
+IMPACT OF HEALTH INDICATORS ON ADULT MORTALITY
 
 Ln(ADULT MORTALITY ) = 5.066562 - 0.0357906 Ln(HIV)
 

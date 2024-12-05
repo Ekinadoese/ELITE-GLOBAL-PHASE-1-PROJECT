@@ -663,15 +663,11 @@ By aligning global resources with these actionable insights, Health management p
 
 ## VISUALIZATION
 
-DATA TRANSFORMATION
-
 ![image](https://github.com/user-attachments/assets/874805cf-3824-4354-97f1-8d843f5e752f)
 
-Key Plots:
-Line graphs: Trends in life expectancy over time.
-Scatter plots: GDP vs. Life Expectancy, Schooling vs. Life Expectancy.
-Bar charts: Immunization coverage by region.
-Heatmaps: Correlation matrix.
+
+![image](https://github.com/user-attachments/assets/edb87790-9aca-40c5-bf0a-e7b919be1154)
+
 
 
 

@@ -135,7 +135,7 @@ Results:
 R-squared value: ~75%, indicating a strong model fit.
 Significant predictors: Schooling, adult mortality, and immunization.
 
-LINEAR REGRESSION
+REGRESSION
 
 IMPACT OF MORTALITY RATE ON LIFE EXPECTANCY
 

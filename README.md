@@ -36,7 +36,7 @@ This project is targeted towards uncovering the impact on some identified KPIs o
 
 ## DATA SOURCES
 
-The data for this project was gotten from kaggle. [Click Here](#https://www.kaggle.com/datasets/shreyasg23/life-expectancy-averaged-dataset?resource=download) to download dataset
+The data for this project was gotten from kaggle. [Click Here](https://www.kaggle.com/datasets/shreyasg23/life-expectancy-averaged-dataset?resource=download) to download dataset
 
 ## TOOLS USED
 

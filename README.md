@@ -1,6 +1,6 @@
 # LIFE EXPECTANCY ANALYSIS USING SOCIOECONOMIC AND HEALTH INDICATORS
 
-This project analyzes global life expectancy data to uncover the socioeconomic and health factors influencing disparities in longevity. The analysis aims to provide actionable insights to policymakers, NGOs, and global health organizations.
+This project analyzes global life expectancy data to uncover the socioeconomic and health factors influencing disparities in longevity. The analysis aims to provide actionable insights to policymakers, NGOs, and global health organizations. This comprehensive analysis can serve as the foundation for Elite Global AI's public health initiatives and predictive modeling strategies. 
 
 ## TABLE OF CONTENT
 - [PROJECT TITLE](PROJECT-TITLE)

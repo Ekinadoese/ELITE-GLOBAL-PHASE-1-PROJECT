@@ -663,15 +663,18 @@ By aligning global resources with these actionable insights, Health management p
 
 ## VISUALIZATION
 
-![image](https://github.com/user-attachments/assets/874805cf-3824-4354-97f1-8d843f5e752f)
-
-
-![image](https://github.com/user-attachments/assets/edb87790-9aca-40c5-bf0a-e7b919be1154)
-
 ## PRESENTATION SLIDE
 
+![P1](https://github.com/user-attachments/assets/2b5598ae-be02-4b89-9378-c1ce579fa338)
 
+![P2](https://github.com/user-attachments/assets/cb7fe02c-6300-49a4-b441-f054b12de245)
 
+![P3](https://github.com/user-attachments/assets/2196be95-37e8-4d6d-9998-1e29c30efeba)
 
+![P5](https://github.com/user-attachments/assets/60dc409e-9f18-4bc2-bf08-e2bbac5ebcae)
 
+![P52](https://github.com/user-attachments/assets/c96c1112-3e25-4a3c-8df8-29904303a923)
 
+![P6](https://github.com/user-attachments/assets/82040799-5877-464b-b964-31d2631fe195)
+
+![P7](https://github.com/user-attachments/assets/3adff49b-0b63-4bdf-977a-d9d675d1bac6)
